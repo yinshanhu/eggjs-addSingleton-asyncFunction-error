@@ -14,7 +14,7 @@ async function createClient(config, app) {
   console.log(11111111111111111111111111111111111111111, axios.get)
 
   try {
-    axios.get(`http://apis.juhe.cn/cook/query?key=&menu=%E8%A5%BF%E7%BA%A2%E6%9F%BF&rn=10&pn=3`).catch((e) => {
+    await axios.get(`http://apis.juhe.cn/cook/query?key=&menu=%E8%A5%BF%E7%BA%A2%E6%9F%BF&rn=10&pn=3`).catch((e) => {
       console.log('>>>>>>>>2222>>>>>>>', e)
     });
 
